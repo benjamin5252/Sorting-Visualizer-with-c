@@ -7,7 +7,7 @@ The sorting visualizer is fully implemented with C. The sorting visualizer provi
 # Features
 Recursive parser for .srt setting file, sorting algorithm, testing strategy
 
-# How to use
+# Instructions
 The sample input .srt data is in the "SortData" folder. <br />
 To make the sortingViz, type command "make sortingViz" <br />
 To run the program, type command "./sortingViz SortData/filename.srt" <br />
