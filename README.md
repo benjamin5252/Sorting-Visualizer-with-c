@@ -6,16 +6,6 @@ The sorting visualizer is fully implemented with C. The sorting visualizer provi
 # Features
 Recursive parser for .srt setting file, sorting algorithm, testing strategy
 
-# Screen recordings
-## bubble sort
-![bubble-sort](https://user-images.githubusercontent.com/31298786/147676686-41a9b11f-cafd-441c-9af6-6fa2a8b2f48f.gif)
-  
-## quick sort
-![quick-sort](https://user-images.githubusercontent.com/31298786/147678853-460a6c04-48de-49b2-aee3-a73ae84898d9.gif)
-
-## merge sort
-![merge_sort](https://user-images.githubusercontent.com/31298786/147679490-fd1e9c11-a66f-42db-b9cf-cb69fc95a767.gif)
-
 # How to use
 The sample input .srt data is in the "SortData" folder. <br />
 To make the sortingViz, type command "make sortingViz.c" <br />
@@ -60,9 +50,14 @@ error_SORT : There is no "{" after "SORT" <br />
 error_NUM : The input is not a number which can be stored in integer <br />
 error_CNUM : The amount of the input number exceed the maximun setting of the tool  <br />
 
+# Screen recordings
+## bubble sort
+![bubble-sort](https://user-images.githubusercontent.com/31298786/147676686-41a9b11f-cafd-441c-9af6-6fa2a8b2f48f.gif)
   
-# How to use
-The sample input .srt data is in the "SortData" folder. <br />
-To make the sortingViz, type command "make sortingViz.c" <br />
-To run the program, type command "./sortingViz SortData/filename.srt" <br />
+## quick sort
+![quick-sort](https://user-images.githubusercontent.com/31298786/147678853-460a6c04-48de-49b2-aee3-a73ae84898d9.gif)
+
+## merge sort
+![merge_sort](https://user-images.githubusercontent.com/31298786/147679490-fd1e9c11-a66f-42db-b9cf-cb69fc95a767.gif)
+
   
