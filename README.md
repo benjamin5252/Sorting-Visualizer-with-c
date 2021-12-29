@@ -1,4 +1,5 @@
 # Sorting-Visualizer-with-c
+![bubble-sort](https://user-images.githubusercontent.com/31298786/147676686-41a9b11f-cafd-441c-9af6-6fa2a8b2f48f.gif)
 
 # Description
 The sorting visualizer is fully implemented with C. The sorting visualizer provides three different sorting methods including bubble sort, merge sort and quick sort. The user can custemize the visualizer with .srt file in given grammer. User can adjust the offset, color, height, and width of the rectanles shown. The number data to sort can also be set in the .srt file.
