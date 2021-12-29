@@ -9,7 +9,7 @@ Recursive parser for .srt setting file, sorting algorithm, testing strategy
 
 # How to use
 The sample input .srt data is in the "SortData" folder. <br />
-To make the sortingViz, type command "make sortingViz.c" <br />
+To make the sortingViz, type command "make sortingViz" <br />
 To run the program, type command "./sortingViz SortData/filename.srt" <br />
 
 # .srt Grammer
