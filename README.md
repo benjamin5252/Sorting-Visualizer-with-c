@@ -7,24 +7,24 @@ The sorting visualizer is fully implemented with C. The sorting visualizer provi
 Recursive parser, sorting algorithm, testing strategy
 
 # .srt Grammer
-<MAIN> ::= "{" <INSTRCTLST>
-<INSTRCTLST> ::= <INSTRUCTION><INSTRCTLST> | "}"
-<INSTRUCTION> ::= <SET> | <SORT>
-<SET> ::= "SET" "{" <SETINSTRCTLST>
-<SETINSTRCTLST> ::= <SETINSTRCT><SETINSTRCTLST> | "}"
-<SETINSTRCT> ::= <HEIGHT> | <WIDTH> | <COLOR> | <TYPE> | <X> | <Y> | <DELAY>
-<HEIGHT> ::= "HEIGHT" <NUM>   /* set the height of the data unit of bar chart */
-<WIDTH> ::= "WIDTH" <NUM>   /* set the width of the bar in bar chart */ 
-<COLOR> ::= "COLOR" <enum_COLOR>   /* set the drawing color of the bar chart */
-<TYPE> ::= "TYPE" <enum_TYPE>   /* set the sorting type */
-<X> ::= "X" <NUM>   /* set the X offset of the entired bar chart */
-<Y> ::= "Y" <NUM>   /* set the Y offset of the entired bar chart */
-<DELAY> ::= "DELAY" <NUM>   /* set the time delay between each step of sorting */
-<enum_COLOR> ::= "WHITE" | "RED" | "GREEN" | "BLUE"
-<enum_TYPE> ::= "BUBBLE" | "MERGE" | "QUICK"
-<SORT> ::= "SORT" "{" <NUMLST>
-<NUMLST> ::= <NUM><NUMLST> | "}"
-<NUM> ::= integer number  
+<MAIN> ::= "{" <INSTRCTLST> \
+<INSTRCTLST> ::= <INSTRUCTION><INSTRCTLST> | "}" \
+<INSTRUCTION> ::= <SET> | <SORT> \
+<SET> ::= "SET" "{" <SETINSTRCTLST> \
+<SETINSTRCTLST> ::= <SETINSTRCT><SETINSTRCTLST> | "}" \
+<SETINSTRCT> ::= <HEIGHT> | <WIDTH> | <COLOR> | <TYPE> | <X> | <Y> | <DELAY> \
+<HEIGHT> ::= "HEIGHT" <NUM>   /* set the height of the data unit of bar chart */ \
+<WIDTH> ::= "WIDTH" <NUM>   /* set the width of the bar in bar chart */ \
+<COLOR> ::= "COLOR" <enum_COLOR>   /* set the drawing color of the bar chart */ \
+<TYPE> ::= "TYPE" <enum_TYPE>   /* set the sorting type */ \
+<X> ::= "X" <NUM>   /* set the X offset of the entired bar chart */ \
+<Y> ::= "Y" <NUM>   /* set the Y offset of the entired bar chart */ \
+<DELAY> ::= "DELAY" <NUM>   /* set the time delay between each step of sorting */ \
+<enum_COLOR> ::= "WHITE" | "RED" | "GREEN" | "BLUE" \
+<enum_TYPE> ::= "BUBBLE" | "MERGE" | "QUICK" \
+<SORT> ::= "SORT" "{" <NUMLST> \
+<NUMLST> ::= <NUM><NUMLST> | "}" \
+<NUM> ::= integer number \ 
   
 # How to use
 The sample input .srt data is in the "SortData" folder.
