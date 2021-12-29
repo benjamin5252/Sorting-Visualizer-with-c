@@ -4,7 +4,7 @@
 The sorting visualizer is fully implemented with C. The sorting visualizer provides three different sorting methods including bubble sort, merge sort and quick sort. The user can custemize the visualizer with .srt file in given grammer. User can adjust the offset, color, height, and width of the rectanles shown. The number data to sort can also be set in the .srt file.
 
 # Features
-Recursive parser, sorting algorithm, testing strategy
+Recursive parser for .srt setting file, sorting algorithm, testing strategy
 
 # .srt Grammer
 \<MAIN> ::= "{" <INSTRCTLST> <br />
@@ -25,6 +25,26 @@ Recursive parser, sorting algorithm, testing strategy
 \<SORT> ::= "SORT" "{" <NUMLST> <br />
 \<NUMLST> ::= <NUM><NUMLST> | "}" <br />
 \<NUM> ::= integer number <br />
+  
+# Testing strategy
+The test of this program is performed through the _test(). <br />
+The parameter settings and sorting functions are all tested. <br />
+The error in the input data are tested by the error_code updated during the parsing. <br />
+
+error_code listed below: <br />
+
+Parse_OK : The input file is conformed to the grammar  <br />
+error_BEGIN : The "{" as the entry of the program is missing <br />
+error_INSTRUCTION : The <INSTRUCTION> input is wrong <br />
+error_SET : There is no "{" after "SET"  <br />
+error_RBRACE : The amount of "}" is wrong <br />
+error_SETINSTRCT : The <SETINSTRCT> in the seting part is wrong <br />
+error_COLOR : The input <enum_COLOR> is not defined in the tool <br />
+error_TYPE : The input <enum_TYPE> is not defined in the tool <br />
+error_SORT : There is no "{" after "SORT" <br />
+error_NUM : The input is not a number which can be stored in integer <br />
+error_CNUM : The amount of the input number exceed the maximun setting of the tool  <br />
+
   
 # How to use
 The sample input .srt data is in the "SortData" folder. <br />
