@@ -27,9 +27,9 @@ Recursive parser, sorting algorithm, testing strategy
 \<NUM> ::= integer number <br />
   
 # How to use
-The sample input .srt data is in the "SortData" folder.
-To make the sortingViz, type command "make sortingViz.c"
-To run the program, type command "./sortingViz SortData/filename.srt"
+The sample input .srt data is in the "SortData" folder. <br />
+To make the sortingViz, type command "make sortingViz.c" <br />
+To run the program, type command "./sortingViz SortData/filename.srt" <br />
   
 # Screen recordings
 ## bubble sort
