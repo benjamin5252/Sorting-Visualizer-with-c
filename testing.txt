@@ -1,0 +1,19 @@
+The test is performed in the _test() function in each program. 
+
+The errors in input program is detected
+by asserting the error_codes updated during parsing.
+Which is performed in both interp.c and parse.c.
+
+Error_codes Description:
+Parse_OK : The input file is Completely conform to the grammar
+error_BEGIN : The input file miss the "{" as the entry of the program
+error_INSTRUCTION : There is a wrong instruction in the program
+error_DO : There is something wrong in the "DO <VAR> FROM <VARNUM> TO <VARNUM> {}" grammar
+error_SET : ":=" is missing in the "SET <VAR> := <POLISH>" grammar
+error_VAR : The format of <VAR> is not a uppercase character
+error_RBRACE : The amount of "}" is not right in the program
+error_VAR_notset : There is a use of unset variable in the program
+
+In interp.c a ferther test for the functions of
+<POLISH>, <DO>, stack, and data storage are perfomed.
+

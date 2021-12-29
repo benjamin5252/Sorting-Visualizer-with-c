@@ -1,0 +1,46 @@
+A sorting animated visualization tool is built in extension.
+
+The grammar for input file is shown below:
+
+<MAIN> ::= "{" <INSTRCTLST>
+<INSTRCTLST> ::= <INSTRUCTION><INSTRCTLST> | "}"
+<INSTRUCTION> ::= <SET> | <SORT>
+<SET> ::= "SET" "{" <SETINSTRCTLST>
+<SETINSTRCTLST> ::= <SETINSTRCT><SETINSTRCTLST> | "}"
+<SETINSTRCT> ::= <HEIGHT> | <WIDTH> | <COLOR> | <TYPE> | <X> | <Y> | <DELAY>
+<HEIGHT> ::= "HEIGHT" <NUM>   /* set the height of the data unit of bar chart */
+<WIDTH> ::= "WIDTH" <NUM>   /* set the width of the bar in bar chart */ 
+<COLOR> ::= "COLOR" <enum_COLOR>   /* set the drawing color of the bar chart */
+<TYPE> ::= "TYPE" <enum_TYPE>   /* set the sorting type */
+<X> ::= "X" <NUM>   /* set the X offset of the entired bar chart */
+<Y> ::= "Y" <NUM>   /* set the Y offset of the entired bar chart */
+<DELAY> ::= "DELAY" <NUM>   /* set the time delay between each step of sorting */
+<enum_COLOR> ::= "WHITE" | "RED" | "GREEN" | "BLUE"
+<enum_TYPE> ::= "BUBBLE" | "MERGE" | "QUICK"
+<SORT> ::= "SORT" "{" <NUMLST>
+<NUMLST> ::= <NUM><NUMLST> | "}"
+<NUM> ::= integer number  
+
+In the tool, three types of sorting methods is implemented.
+The visualization can be adjusted by various parameters, 
+which is shown in the commands after the grammar.
+The sample input data is in the "SortData" folder.
+To run the program, type command "./extension SortData/filename.srt"
+
+The test of this program is performed through the _test().
+The parameter settings and sorting functions are all tested.
+The error in the input data are tested by the error_code updated during the parsing.
+
+error_code listed below:
+
+Parse_OK : The input file is conformed to the grammar  
+error_BEGIN : The "{" as the entry of the program is missing 
+error_INSTRUCTION : The <INSTRUCTION> input is wrong 
+error_SET : There is no "{" after "SET" 
+error_RBRACE : The amount of "}" is wrong
+error_SETINSTRCT : The <SETINSTRCT> in the seting part is wrong
+error_COLOR : The input <enum_COLOR> is not defined in the tool
+error_TYPE : The input <enum_TYPE> is not defined in the tool
+error_SORT : There is no "{" after "SORT"
+error_NUM : The input is not a number which can be stored in integer
+error_CNUM : The amount of the input number exceed the maximun setting of the tool 
