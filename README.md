@@ -5,7 +5,9 @@
 The sorting visualizer is fully implemented with C. The sorting visualizer provides three different sorting methods including bubble sort, merge sort and quick sort. The user can custemize the visualizer with .srt file in given grammer. User can adjust the offset, color, height, and width of the rectanles shown. The number data to sort can also be set in the .srt file.
 
 # Features
-Recursive parser for .srt setting file, sorting algorithm, testing strategy
+Recursive parser for .srt setting file <br /> 
+sorting algorithm <br />
+testing strategy
 
 # Instructions
 The sample input .srt data is in the "SortData" folder. <br />
